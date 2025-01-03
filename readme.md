@@ -1,4 +1,4 @@
-# Tensor OPE Project
+# Stringy Numerator Project
 
 This project provides symbolic operations and integrals for calculating the Operator Product Expansion (OPE) of gluon vertex operators with tensor terms. It implements the algorithm described in the appendix of the accompanying paper.
 
