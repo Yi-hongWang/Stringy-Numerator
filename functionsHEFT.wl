@@ -149,7 +149,9 @@
 
 (* ::Input:: *)
 (*(*GINum[n_Integer,p_] generates the gauge invariant  numerator*)*)
-(*GINum[n_Integer,p_]:=Plus@@((#[[1]] (#[[2]]//Intij))&/@GIAOTree[n,p]);*)
+(*ClearAll[SwappFk]*)
+(*SwappFk[expr_]:=expr/. p\[CircleDot]F_Symbol\[CircleDot]k_Symbol/;(StringMatchQ[SymbolName[F],"F"~~DigitCharacter..]&&StringMatchQ[SymbolName[k],"k"~~DigitCharacter..]):>-k\[CircleDot]F\[CircleDot]p*)
+(*GINum[n_Integer,p_]:=Plus@@((#[[1]] (#[[2]]//Intij))&/@GIAOTree[n,p])//SwappFk;*)
 
 
 (* ::Input:: *)
@@ -336,4 +338,16 @@
 
 
 (* ::Input:: *)
-(*tijplot[n_Integer,tij_List]:=Graph[Range[n+1],(tij//ListtoEdges),VertexLabels->"Name",ImageSize->80];*)
+(*tijplot[n_Integer,tij_List]:=Graph[Range[n+1],(tij//ListtoEdges),VertexLabels->"Name",ImageSize->80,GraphLayout->{"LayeredDigraphEmbedding","RootVertex"->(n+1),"Orientation"->Right},ImagePadding->10];*)
+
+
+(* ::Input:: *)
+(*ClearAll[DrawRootedTree]*)
+(*DrawRootedTree[edges_List]:=Module[{n,g,coords,maxX,midY},(*Find the maximum vertex number as n*)n=Max[Flatten[edges]];*)
+(*(*Create initial graph using LayeredDigraphEmbedding*)g=Graph[Range[n],edges,VertexLabels->"Name",GraphLayout->{"LayeredDigraphEmbedding","RootVertex"->n,"Orientation"->Left}];*)
+(*(*Get initial coordinates from the embedding*)coords=GraphEmbedding[g];*)
+(*(*Determine the maximum x coordinate and midpoint of y coordinates*)maxX=Max[coords[[All,1]]];*)
+(*midY=Mean[coords[[All,2]]];*)
+(*(*Scale down coordinates to control graph size*)coords=coords*0.5;*)
+(*(*Adjust root node (n) position to be closer to other nodes*)coords[[n]]={maxX+.7,midY};*)
+(*(*Redraw the graph with adjusted coordinates*)Graph[Range[n],edges,VertexLabels->"Name",VertexCoordinates->coords,ImageSize->100]]*)
