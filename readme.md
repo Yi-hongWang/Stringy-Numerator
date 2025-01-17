@@ -30,17 +30,16 @@ The  gluons have massless momentum $k_i$ and $k_i^2=0$, and the two massive scal
 We have the Momentum conservation $k_1+...+k_n= p'-p$
 
 ```mathematica
-(* setting the number of gluon*)
-Ngluons=3
-GIAOTree[Ngluons, p]
-(* lists all the rooted tree graphs as described in section 4.2 *)
+GIAOTree[3, p]
+(* lists all the rooted tree graphs for the emission of 3 gluons as described in section 4.2 *)
 ```
 <center>
 <img src="3gluonsGraphs.png" alt="Graphs for the 3 gluons case" width="500"/>
 </center>
+
 ```mathematica
-GINum[Ngluons, p]
-(* Outputs the numerator factors *)
+GINum[3, p]
+(* Outputs the numerator factors for the emission of 3 gluons*)
 ```
 
 <center>
