@@ -12,7 +12,7 @@ by [Chih-Hao Fu](https://orcid.org/0009-0006-0341-7102), [Pierre Vanhove](https:
 ## Files
 
 1. [functionsHEFT.wl](functionsHEFT.wl): Contains all the defined functions used for symbolic computations.
-2. [HEFT-numerators.nb](HEFT-numerators.nb): Includes usage examples demonstrating how to call the functions and their expected outputs.
+2. [HEFT-numerators.nb](HEFT-numerators.nb): Mathematica worksheet that includes usage examples demonstrating how to call the functions and their expected outputs. A pdf output of this worksheet is [HEFT-numerators.pdf](HEFT-numerators.pdf)
 3.  [numerator-six-gluons.txt](numerator-six-gluons.txt): the numerator for the emission of six gluons. Size of the file 342555.
 4.  [numerator-seven-gluons.txt](numerator-seven-gluons.txt): the numerator for the emission of seven gluons. Size of the file 3816849.
 3. [numerator-eight-gluons.txt](numerator-eight-gluons.txt): the numerator for the emission of eight gluons. Size of the file 47372948.
