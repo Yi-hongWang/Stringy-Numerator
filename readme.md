@@ -11,14 +11,17 @@ by [Chih-Hao Fu](https://orcid.org/0009-0006-0341-7102), [Pierre Vanhove](https:
 
 ## Files
 
-1. **functionsHEFT.wl**: Contains all the defined functions used for symbolic computations.
-2. **HEFT-numerators.nb**: Includes usage examples demonstrating how to call the functions and their expected outputs.
+1. [functionsHEFT.wl](functionsHEFT.wl): Contains all the defined functions used for symbolic computations.
+2. [HEFT-numerators.nb](HEFT-numerators.nb): Includes usage examples demonstrating how to call the functions and their expected outputs.
+3.  [numerator-six-gluons.txt](numerator-six-gluons.txt): the numerator for the emission of six gluons. Size of the file 342555.
+4.  [numerator-seven-gluons.txt](numerator-seven-gluons.txt): the numerator for the emission of seven gluons. Size of the file 3816849.
+3. [numerator-eight-gluons.txt](numerator-eight-gluons.txt): the numerator for the emission of eight gluons. Size of the file 47372948.
 
 ## How to Use
 
 Open `functionsHEFT.wl` in Mathematica and evaluate the entire notebook to load all functions.
 
-## Functions
+### Functions
 
 The functions provided are function of `Ngluons` the number of the emitted gluons and `P` the momentum of the incoming massive particle
 
@@ -28,6 +31,9 @@ The functions provided are function of `Ngluons` the number of the emitted gluon
 
 The  gluons have massless momentum $k_i$ and $k_i^2=0$, and the two massive scalars have massive momentum $p$ and $p'$ with $p^2=(p')^2\neq0$.
 We have the Momentum conservation $k_1+...+k_n= p'-p$
+
+### Three gluon example
+
 
 ```mathematica
 GIAOTree[3, p]
