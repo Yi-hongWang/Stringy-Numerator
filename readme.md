@@ -1,13 +1,12 @@
 # HEFT Numerators from Kinematic  Algebra
 
-This algorithm implements the construction of the heavy mass effective field theory from the stringy kinematic algebra.
+This algorithm implements the construction of the numerator factor for the multigluon emission from a massive scalar in heavy mass effective field theory from the stringy kinematic algebra.
 
 The algorithm is presented in the paper
 
-**HEFT Numerators from Kinematic  Algebra**
-
+**HEFT Numerators from Kinematic  Algebra** 
+[2501.14523](https://arxiv.org/abs/2501.14523)
 by [Chih-Hao Fu](https://orcid.org/0009-0006-0341-7102), [Pierre Vanhove](https://pierrevanhove.github.io) and [Yihong Wang](https://inspirehep.net/authors/1509995?ui-citation-summary=true)
-
 
 ## Files
 
