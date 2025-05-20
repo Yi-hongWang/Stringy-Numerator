@@ -1,3 +1,10 @@
+[![Author: Chih-Hao Fu](https://img.shields.io/badge/author-Chih_Hao_Fu-blue)](https://orcid.org/0009-0006-0341-7102)
+[![Author: Pierre Vanhove](https://img.shields.io/badge/author-Pierre_Vanhove-blue)](https://pierrevanhove.github.io)
+[![Author: Yihong Wang](https://img.shields.io/badge/author-Yihong_Wang-blue)](https://inspirehep.net/authors/1509995?ui-citation-summary=true)
+
+[![arXiv:2501.14523](https://img.shields.io/badge/arXiv-2501.14523-b31b1b.svg)](https://arxiv.org/abs/2501.14523)
+![Language: Mathematica](https://img.shields.io/badge/Language-Mathematica-yellow)
+
 # HEFT Numerators from Kinematic  Algebra
 
 This algorithm implements the construction of the numerator factor for the multigluon emission from a massive scalar in heavy mass effective field theory from the stringy kinematic algebra.
